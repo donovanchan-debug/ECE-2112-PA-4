@@ -51,12 +51,19 @@ overwrite VisFemale when performing this second filter.
 `pontiac = cars[cars["Model"] == "Pontiac Firebird"][["Model", "mpg", "hp", "wt"]]`   
 `pontiac`   
 
-# C. MULTI-MODEL SUBSETTING
-Create a DataFrame named selected_cars containing only the records for three models: Datsun 710,
-Lotus Europa, and Ferrari Dino.   
-For these records, retain only Model, mpg, cyl, hp, and gear. Select the rows by their model values
-rather than by row numbers. Display selected cars and their shape.   
-Required check: The final DataFrame must contain exactly three rows and five columns.   
+# C. CATEGORY-AVERAGE VISUALIZATION
+Examine how the recorded Average differs across the three categorical features Track, Gender, and
+Hometown.   
+
+a. For each feature, compute the mean of Average for every category using Pandas.   
+b. Display the three summary tables.   
+c. Create one figure containing three bar charts: mean Average by Track, by Gender, and by
+Hometown.   
+d. Below the figure, write three concise statements identifying the category with the highest sample
+mean for each feature.   
+
+Interpretation rule: Describe the observed dataset only. A difference in group means does not, by
+itself, establish that a feature causes a higher board-exam score.     
 
 **How it works:**  
 1. Filtering the Rows:   
