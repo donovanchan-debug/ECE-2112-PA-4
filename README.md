@@ -3,7 +3,7 @@
 Name: Donovan C. Chan  
 Section: 2ECE-A  
 
-# SETTING UP THE TABLE:
+# SETTING UP THE TABLE:   
 1. Import library for data structures and tools:   
 `import pandas as pd`
 
@@ -88,9 +88,9 @@ itself, establish that a feature causes a higher board-exam score.
 `Gendermean`   
 `Hometownmean`   
 
-*c. Create one figure containing three bar charts: mean Average by Track, by Gender, and by Hometown.*
+*c. Create one figure containing three bar charts: mean Average by Track, by Gender, and by Hometown.*   
 1. Create 1 figure with 1 row and 3 columns of subplots:   
-`fig, axes = plt.subplots(1, 3, figsize=(15, 5))`
+`fig, axes = plt.subplots(1, 3, figsize=(15, 5))`   
 
 2. Plot mean average by track for the 1st bar chart:   
 `Trackmean.plot(kind='bar', ax=axes[0], color='skyblue', edgecolor='black')`   
@@ -114,12 +114,12 @@ itself, establish that a feature causes a higher board-exam score.
 `axes[2].set_title('Mean Average by Hometown')`   
 `axes[2].set_xlabel('Hometown')`   
 
-9. Adjust labels so they do not overlap the plots:
-`plt.tight_layout()`
-`plt.show()`
+9. Adjust labels so they do not overlap the plots:   
+`plt.tight_layout()`   
+`plt.show()`   
 
-*d. Below the figure, write three concise statements identifying the category with the highest sample mean for each feature.*
-`print("Interpretation:")`
-`print(f"- Track with highest mean: {Trackmean.idxmax()} ({Trackmean.max():.2f})")`
-`print(f"- Gender with highest mean: {Gendermean.idxmax()} ({Gendermean.max():.2f})")`
-`print(f"- Hometown with highest mean: {Hometownmean.idxmax()} ({Hometownmean.max():.2f})")`
+*d. Below the figure, write three concise statements identifying the category with the highest sample mean for each feature.*   
+`print("Interpretation:")`   
+`print(f"- Track with highest mean: {Trackmean.idxmax()} ({Trackmean.max():.2f})")`   
+`print(f"- Gender with highest mean: {Gendermean.idxmax()} ({Gendermean.max():.2f})")`   
+`print(f"- Hometown with highest mean: {Hometownmean.idxmax()} ({Hometownmean.max():.2f})")`   
