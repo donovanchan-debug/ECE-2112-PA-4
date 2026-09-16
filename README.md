@@ -101,13 +101,25 @@ itself, establish that a feature causes a higher board-exam score.
 `axes[0].set_xlabel('Track')`   
 
 4. Plot mean average by gender for the 2nd bar chart:   
-`Gendermean.plot(kind='bar', ax=axes[1], color='lightgreen', edgecolor='black')`
+`Gendermean.plot(kind='bar', ax=axes[1], color='lightgreen', edgecolor='black')`   
 
-5. Add labels for the 2nd bar chart:
-`axes[1].set_title('Mean Average by Gender')`
+5. Add labels for the 2nd bar chart:   
+`axes[1].set_title('Mean Average by Gender')`   
+`axes[1].set_xlabel('Gender')`   
 
-6. Plot mean average by hometown for the 3rd bar chart:   
-`Hometownmean.plot(kind='bar', ax=axes[2], color='salmon', edgecolor='black')`
+7. Plot mean average by hometown for the 3rd bar chart:   
+`Hometownmean.plot(kind='bar', ax=axes[2], color='salmon', edgecolor='black')`   
 
-7. Add labels for the 3rd bar chart:
+8. Add labels for the 3rd bar chart:   
+`axes[2].set_title('Mean Average by Hometown')`   
+`axes[2].set_xlabel('Hometown')`   
 
+9. Adjust labels so they do not overlap the plots:
+`plt.tight_layout()`
+`plt.show()`
+
+*d. Below the figure, write three concise statements identifying the category with the highest sample mean for each feature.*
+`print("Interpretation:")`
+`print(f"- Track with highest mean: {Trackmean.idxmax()} ({Trackmean.max():.2f})")`
+`print(f"- Gender with highest mean: {Gendermean.idxmax()} ({Gendermean.max():.2f})")`
+`print(f"- Hometown with highest mean: {Hometownmean.idxmax()} ({Hometownmean.max():.2f})")`
